@@ -1,0 +1,11 @@
+kiota/
+rust-test-services/target/
+rust-test-services/Cargo.lock
+test-runners/csharp/bin/
+test-runners/csharp/obj/
+test-runners/go/bin/
+test-runners/python/__pycache__/
+test-runners/typescript/node_modules/
+test-runners/java/target/
+*.user
+.DS_Store

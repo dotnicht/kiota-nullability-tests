@@ -1,0 +1,10 @@
+[workspace]
+members = [
+    "service-primitives",
+    "service-objects",
+    "service-enums",
+    "service-collections",
+    "service-compositions",
+    "service-params",
+]
+resolver = "2"
