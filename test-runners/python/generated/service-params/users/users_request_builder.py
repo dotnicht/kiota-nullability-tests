@@ -23,7 +23,7 @@ class UsersRequestBuilder(BaseRequestBuilder):
     
     def by_user_id(self,user_id: str) -> WithUser_ItemRequestBuilder:
         """
-        Gets an item from the kiota_tests.service-params.users.item collection
+        Gets an item from the kiotatest.service.params.users.item collection
         param user_id: User identifier
         Returns: WithUser_ItemRequestBuilder
         """

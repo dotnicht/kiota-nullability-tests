@@ -23,7 +23,7 @@ class ItemsRequestBuilder(BaseRequestBuilder):
     
     def by_id(self,id: int) -> ItemsItemRequestBuilder:
         """
-        Gets an item from the kiota_tests.service-params.items.item collection
+        Gets an item from the kiotatest.service.params.items.item collection
         param id: Required non-nullable path param
         Returns: ItemsItemRequestBuilder
         """

@@ -23,7 +23,7 @@ class PostsRequestBuilder(BaseRequestBuilder):
     
     def by_post_id(self,post_id: int) -> WithPost_ItemRequestBuilder:
         """
-        Gets an item from the kiota_tests.service-params.users.item.posts.item collection
+        Gets an item from the kiotatest.service.params.users.item.posts.item collection
         param post_id: Post identifier
         Returns: WithPost_ItemRequestBuilder
         """
