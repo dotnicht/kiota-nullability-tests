@@ -43,7 +43,7 @@ func TestPrimitivesNullability(t *testing.T) {
 	}
 	adapter.SetBaseUrl("http://localhost:8080")
 
-	client := primitives.NewServicePrimitivesClient(adapter)
+	client := primitives.NewApiClient(adapter)
 	result, err := client.Model().Get(context.Background(), nil)
 	if err != nil {
 		t.Fatalf("GET /model: %v", err)
