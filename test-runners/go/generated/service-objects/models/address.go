@@ -71,15 +71,15 @@ func (m *Address) GetStreet()(string) {
 // Serialize serializes information the current object
 func (m *Address) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.SerializationWriter)(error) {
     {
-        _v := m.GetCity()
-        err := writer.WriteStringValue("city", &_v)
+        v := m.GetCity()
+        err := writer.WriteStringValue("city", &v)
         if err != nil {
             return err
         }
     }
     {
-        _v := m.GetStreet()
-        err := writer.WriteStringValue("street", &_v)
+        v := m.GetStreet()
+        err := writer.WriteStringValue("street", &v)
         if err != nil {
             return err
         }

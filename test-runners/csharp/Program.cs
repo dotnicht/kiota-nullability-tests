@@ -22,6 +22,13 @@ using Microsoft.Kiota.Abstractions;
 using Microsoft.Kiota.Abstractions.Authentication;
 using Microsoft.Kiota.Http.HttpClientLibrary;
 
+using PrimitivesClient = KiotaTest.Primitives.ApiClient;
+using EnumsClient = KiotaTest.Enums.ApiClient;
+using ObjectsClient = KiotaTest.Objects.ApiClient;
+using CollectionsClient = KiotaTest.Collections.ApiClient;
+using CompositionsClient = KiotaTest.Compositions.ApiClient;
+using ParamsClient = KiotaTest.Params.ApiClient;
+
 // ── Service definitions ───────────────────────────────────────────────────────
 
 var serviceDir = Path.GetFullPath(
@@ -131,7 +138,7 @@ foreach (var svc in services)
         // ── service-primitives ────────────────────────────────────────────
         if (svc == "service-primitives")
         {
-            var client = new KiotaTest.Primitives.PrimitivesClient(Adapter("http://localhost:8080"));
+            var client = new PrimitivesClient(Adapter("http://localhost:8080"));
             var model = await client.Model.GetAsync(cancellationToken: cts.Token).ConfigureAwait(false);
 
             // Type-level check: these would be compile errors if generated as nullable
@@ -154,7 +161,7 @@ foreach (var svc in services)
         // ── service-enums ─────────────────────────────────────────────────
         else if (svc == "service-enums")
         {
-            var client = new KiotaTest.Enums.EnumsClient(Adapter("http://localhost:8080"));
+            var client = new EnumsClient(Adapter("http://localhost:8080"));
             var model = await client.Model.GetAsync(cancellationToken: cts.Token).ConfigureAwait(false);
 
             Check("enums/model response non-null", model is not null);
@@ -170,7 +177,7 @@ foreach (var svc in services)
         // ── service-objects ───────────────────────────────────────────────
         else if (svc == "service-objects")
         {
-            var client = new KiotaTest.Objects.ObjectsClient(Adapter("http://localhost:8080"));
+            var client = new ObjectsClient(Adapter("http://localhost:8080"));
             var model = await client.Outer.GetAsync(cancellationToken: cts.Token).ConfigureAwait(false);
 
             Check("objects/outer response non-null", model is not null);
@@ -183,7 +190,7 @@ foreach (var svc in services)
         // ── service-collections ───────────────────────────────────────────
         else if (svc == "service-collections")
         {
-            var client = new KiotaTest.Collections.CollectionsClient(Adapter("http://localhost:8080"));
+            var client = new CollectionsClient(Adapter("http://localhost:8080"));
             var model = await client.Model.GetAsync(cancellationToken: cts.Token).ConfigureAwait(false);
 
             Check("collections/model response non-null", model is not null);
@@ -192,7 +199,7 @@ foreach (var svc in services)
         // ── service-compositions ──────────────────────────────────────────
         else if (svc == "service-compositions")
         {
-            var client = new KiotaTest.Compositions.CompositionsClient(Adapter("http://localhost:8080"));
+            var client = new CompositionsClient(Adapter("http://localhost:8080"));
             var model = await client.Model.GetAsync(cancellationToken: cts.Token).ConfigureAwait(false);
 
             Check("compositions/model response non-null", model is not null);
@@ -201,7 +208,7 @@ foreach (var svc in services)
         // ── service-params ────────────────────────────────────────────────
         else if (svc == "service-params")
         {
-            var client = new KiotaTest.Params.ParamsClient(Adapter("http://localhost:8080"));
+            var client = new ParamsClient(Adapter("http://localhost:8080"));
             // /items/{id} returns a single item — use id=1 as a required non-nullable path param
             var item = await client.Items[1].GetAsync(cancellationToken: cts.Token).ConfigureAwait(false);
             Check("params/item response non-null", item is not null);

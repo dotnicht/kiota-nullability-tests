@@ -88,22 +88,20 @@ func (m *Middle) GetOptionalInner()(Innerable) {
 // Serialize serializes information the current object
 func (m *Middle) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.SerializationWriter)(error) {
     {
-        _v := m.GetInner()
-        err := writer.WriteObjectValue("inner", _v)
+        err := writer.WriteObjectValue("inner", m.GetInner())
         if err != nil {
             return err
         }
     }
     {
-        _v := m.GetLabel()
-        err := writer.WriteStringValue("label", &_v)
+        v := m.GetLabel()
+        err := writer.WriteStringValue("label", &v)
         if err != nil {
             return err
         }
     }
     {
-        _v := m.GetOptionalInner()
-        err := writer.WriteObjectValue("optional_inner", _v)
+        err := writer.WriteObjectValue("optional_inner", m.GetOptionalInner())
         if err != nil {
             return err
         }

@@ -1,9 +1,9 @@
 {
   "descriptionHash": "71C5A15F527A592A5161EA617C4892C0700AF91DB276419ED0EBCBA290570AD8585532C6966767058070239ED1B982889651069A3773505651F57214A4CED40C",
-  "descriptionLocation": "http://localhost:8080/openapi.json",
+  "descriptionLocation": "../../../../rust-test-services/specs/service-primitives.json",
   "lockFileVersion": "1.0.0",
   "kiotaVersion": "1.31.1",
-  "clientClassName": "ServicePrimitivesClient",
+  "clientClassName": "ApiClient",
   "typeAccessModifier": "Public",
   "clientNamespaceName": "github.com/dotnicht/kiota-tests/service-primitives",
   "language": "Go",

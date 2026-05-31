@@ -88,22 +88,20 @@ func (m *Outer) GetNullableMiddle()(Middleable) {
 // Serialize serializes information the current object
 func (m *Outer) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.SerializationWriter)(error) {
     {
-        _v := m.GetId()
-        err := writer.WriteInt32Value("id", &_v)
+        v := m.GetId()
+        err := writer.WriteInt32Value("id", &v)
         if err != nil {
             return err
         }
     }
     {
-        _v := m.GetMiddle()
-        err := writer.WriteObjectValue("middle", _v)
+        err := writer.WriteObjectValue("middle", m.GetMiddle())
         if err != nil {
             return err
         }
     }
     {
-        _v := m.GetNullableMiddle()
-        err := writer.WriteObjectValue("nullable_middle", _v)
+        err := writer.WriteObjectValue("nullable_middle", m.GetNullableMiddle())
         if err != nil {
             return err
         }

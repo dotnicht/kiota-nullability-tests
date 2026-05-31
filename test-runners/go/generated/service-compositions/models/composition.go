@@ -122,36 +122,31 @@ func (m *Composition) GetValue()(i878a80d2330e89d26896388a3f487eef27b0a0e6c010c4
 // Serialize serializes information the current object
 func (m *Composition) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.SerializationWriter)(error) {
     {
-        _v := m.GetAnimal()
-        err := writer.WriteObjectValue("animal", _v)
+        err := writer.WriteObjectValue("animal", m.GetAnimal())
         if err != nil {
             return err
         }
     }
     {
-        _v := m.GetExtended()
-        err := writer.WriteObjectValue("extended", _v)
+        err := writer.WriteObjectValue("extended", m.GetExtended())
         if err != nil {
             return err
         }
     }
     {
-        _v := m.GetNullableValue()
-        err := writer.WriteObjectValue("nullable_value", _v)
+        err := writer.WriteObjectValue("nullable_value", m.GetNullableValue())
         if err != nil {
             return err
         }
     }
     {
-        _v := m.GetOptionalExtended()
-        err := writer.WriteObjectValue("optional_extended", _v)
+        err := writer.WriteObjectValue("optional_extended", m.GetOptionalExtended())
         if err != nil {
             return err
         }
     }
     {
-        _v := m.GetValue()
-        err := writer.WriteObjectValue("value", _v)
+        err := writer.WriteObjectValue("value", m.GetValue())
         if err != nil {
             return err
         }

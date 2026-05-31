@@ -71,15 +71,15 @@ func (m *Base) GetName()(string) {
 // Serialize serializes information the current object
 func (m *Base) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.SerializationWriter)(error) {
     {
-        _v := m.GetId()
-        err := writer.WriteInt32Value("id", &_v)
+        v := m.GetId()
+        err := writer.WriteInt32Value("id", &v)
         if err != nil {
             return err
         }
     }
     {
-        _v := m.GetName()
-        err := writer.WriteStringValue("name", &_v)
+        v := m.GetName()
+        err := writer.WriteStringValue("name", &v)
         if err != nil {
             return err
         }

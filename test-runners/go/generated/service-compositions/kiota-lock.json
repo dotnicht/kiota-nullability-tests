@@ -1,9 +1,9 @@
 {
   "descriptionHash": "B5DBF460C9227D6DA4547751E126636FDFEE0D5B1F8A497B5E662A8A754098FB4A6ED9A039927B111D3812CACB39C656A707927B47FA19B78712DD42FCC30A31",
-  "descriptionLocation": "http://localhost:8080/openapi.json",
+  "descriptionLocation": "../../../../rust-test-services/specs/service-compositions.json",
   "lockFileVersion": "1.0.0",
   "kiotaVersion": "1.31.1",
-  "clientClassName": "ServiceCompositionsClient",
+  "clientClassName": "ApiClient",
   "typeAccessModifier": "Public",
   "clientNamespaceName": "github.com/dotnicht/kiota-tests/service-compositions",
   "language": "Go",

@@ -77,8 +77,8 @@ func (m *Inner) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a0e6c010c4
         }
     }
     {
-        _v := m.GetValue()
-        err := writer.WriteStringValue("value", &_v)
+        v := m.GetValue()
+        err := writer.WriteStringValue("value", &v)
         if err != nil {
             return err
         }

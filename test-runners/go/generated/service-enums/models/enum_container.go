@@ -58,7 +58,7 @@ func (m *EnumContainer) GetFieldDeserializers()(map[string]func(i878a80d2330e89d
             return err
         }
         if val != nil {
-            m.SetCode(*(val.(*Code)))
+            m.SetCode(*val.(*Code))
         }
         return nil
     }
@@ -104,7 +104,7 @@ func (m *EnumContainer) GetFieldDeserializers()(map[string]func(i878a80d2330e89d
             return err
         }
         if val != nil {
-            m.SetRequiredNonNullableStatus(*(val.(*Status)))
+            m.SetRequiredNonNullableStatus(*val.(*Status))
         }
         return nil
     }

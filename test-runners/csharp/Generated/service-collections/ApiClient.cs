@@ -17,7 +17,7 @@ namespace KiotaTest.Collections
     /// The main entry point of the SDK, exposes the configuration and the fluent API.
     /// </summary>
     [global::System.CodeDom.Compiler.GeneratedCode("Kiota", "1.0.0")]
-    public partial class CollectionsClient : BaseRequestBuilder
+    public partial class ApiClient : BaseRequestBuilder
     {
         /// <summary>The model property</summary>
         public global::KiotaTest.Collections.Model.ModelRequestBuilder Model
@@ -25,10 +25,10 @@ namespace KiotaTest.Collections
             get => new global::KiotaTest.Collections.Model.ModelRequestBuilder(PathParameters, RequestAdapter);
         }
         /// <summary>
-        /// Instantiates a new <see cref="global::KiotaTest.Collections.CollectionsClient"/> and sets the default values.
+        /// Instantiates a new <see cref="global::KiotaTest.Collections.ApiClient"/> and sets the default values.
         /// </summary>
         /// <param name="requestAdapter">The request adapter to use to execute the requests.</param>
-        public CollectionsClient(IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}", new Dictionary<string, object>())
+        public ApiClient(IRequestAdapter requestAdapter) : base(requestAdapter, "{+baseurl}", new Dictionary<string, object>())
         {
             ApiClientBuilder.RegisterDefaultSerializer<JsonSerializationWriterFactory>();
             ApiClientBuilder.RegisterDefaultSerializer<TextSerializationWriterFactory>();

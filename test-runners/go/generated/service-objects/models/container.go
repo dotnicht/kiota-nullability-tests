@@ -135,8 +135,7 @@ func (m *Container) GetRequiredNullableAddress()(Addressable) {
 // Serialize serializes information the current object
 func (m *Container) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.SerializationWriter)(error) {
     {
-        _v := m.GetOptionalNullableAddress()
-        err := writer.WriteObjectValue("optional_nullable_address", _v)
+        err := writer.WriteObjectValue("optional_nullable_address", m.GetOptionalNullableAddress())
         if err != nil {
             return err
         }
@@ -154,8 +153,7 @@ func (m *Container) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a0e6c0
         }
     }
     {
-        _v := m.GetRequiredNonNullableAddress()
-        err := writer.WriteObjectValue("required_non_nullable_address", _v)
+        err := writer.WriteObjectValue("required_non_nullable_address", m.GetRequiredNonNullableAddress())
         if err != nil {
             return err
         }
@@ -173,8 +171,7 @@ func (m *Container) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a0e6c0
         }
     }
     {
-        _v := m.GetRequiredNullableAddress()
-        err := writer.WriteObjectValue("required_nullable_address", _v)
+        err := writer.WriteObjectValue("required_nullable_address", m.GetRequiredNullableAddress())
         if err != nil {
             return err
         }

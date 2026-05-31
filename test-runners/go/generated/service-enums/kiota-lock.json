@@ -1,9 +1,9 @@
 {
   "descriptionHash": "F995B5269CA39847D577337E143F0454A75EE510A7F8157EF63B1E8E760DDB738D3EF3B960810EFC6D99E21C1235FFBA94A40350EA4689897E2C2E6BB10123BD",
-  "descriptionLocation": "http://localhost:8080/openapi.json",
+  "descriptionLocation": "../../../../rust-test-services/specs/service-enums.json",
   "lockFileVersion": "1.0.0",
   "kiotaVersion": "1.31.1",
-  "clientClassName": "ServiceEnumsClient",
+  "clientClassName": "ApiClient",
   "typeAccessModifier": "Public",
   "clientNamespaceName": "github.com/dotnicht/kiota-tests/service-enums",
   "language": "Go",

@@ -129,29 +129,29 @@ func (m *SearchResult) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a0e
         }
     }
     {
-        _v := m.GetCount()
-        err := writer.WriteInt32Value("count", &_v)
+        v := m.GetCount()
+        err := writer.WriteInt32Value("count", &v)
         if err != nil {
             return err
         }
     }
     {
-        _v := m.GetPage()
-        err := writer.WriteInt32Value("page", &_v)
+        v := m.GetPage()
+        err := writer.WriteInt32Value("page", &v)
         if err != nil {
             return err
         }
     }
     {
-        _v := m.GetQuery()
-        err := writer.WriteStringValue("query", &_v)
+        v := m.GetQuery()
+        err := writer.WriteStringValue("query", &v)
         if err != nil {
             return err
         }
     }
     {
-        _v := m.GetSort()
-        err := writer.WriteStringValue("sort", &_v)
+        v := m.GetSort()
+        err := writer.WriteStringValue("sort", &v)
         if err != nil {
             return err
         }

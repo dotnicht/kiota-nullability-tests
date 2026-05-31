@@ -106,15 +106,15 @@ func (m *TreeNode) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a0e6c01
         }
     }
     {
-        _v := m.GetId()
-        err := writer.WriteInt32Value("id", &_v)
+        v := m.GetId()
+        err := writer.WriteInt32Value("id", &v)
         if err != nil {
             return err
         }
     }
     {
-        _v := m.GetLabel()
-        err := writer.WriteStringValue("label", &_v)
+        v := m.GetLabel()
+        err := writer.WriteStringValue("label", &v)
         if err != nil {
             return err
         }

@@ -244,15 +244,13 @@ func (m *Collections) GetStringMap()(Collections_string_mapable) {
 // Serialize serializes information the current object
 func (m *Collections) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.SerializationWriter)(error) {
     {
-        _v := m.GetItemMap()
-        err := writer.WriteObjectValue("item_map", _v)
+        err := writer.WriteObjectValue("item_map", m.GetItemMap())
         if err != nil {
             return err
         }
     }
     {
-        _v := m.GetNested()
-        err := writer.WriteObjectValue("nested", _v)
+        err := writer.WriteObjectValue("nested", m.GetNested())
         if err != nil {
             return err
         }
@@ -264,8 +262,7 @@ func (m *Collections) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a0e6
         }
     }
     {
-        _v := m.GetNullableValueMap()
-        err := writer.WriteObjectValue("nullable_value_map", _v)
+        err := writer.WriteObjectValue("nullable_value_map", m.GetNullableValueMap())
         if err != nil {
             return err
         }
@@ -307,8 +304,7 @@ func (m *Collections) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a0e6
         }
     }
     {
-        _v := m.GetStringMap()
-        err := writer.WriteObjectValue("string_map", _v)
+        err := writer.WriteObjectValue("string_map", m.GetStringMap())
         if err != nil {
             return err
         }

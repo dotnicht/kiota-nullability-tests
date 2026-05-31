@@ -656,8 +656,8 @@ func (m *Primitives) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a0e6c
         }
     }
     {
-        _v := m.GetRequiredNonNullableBool()
-        err := writer.WriteBoolValue("required_non_nullable_bool", &_v)
+        v := m.GetRequiredNonNullableBool()
+        err := writer.WriteBoolValue("required_non_nullable_bool", &v)
         if err != nil {
             return err
         }
@@ -669,57 +669,57 @@ func (m *Primitives) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a0e6c
         }
     }
     {
-        _v := m.GetRequiredNonNullableDate()
-        err := writer.WriteDateOnlyValue("required_non_nullable_date", &_v)
+        v := m.GetRequiredNonNullableDate()
+        err := writer.WriteDateOnlyValue("required_non_nullable_date", &v)
         if err != nil {
             return err
         }
     }
     {
-        _v := m.GetRequiredNonNullableDatetime()
-        err := writer.WriteTimeValue("required_non_nullable_datetime", &_v)
+        v := m.GetRequiredNonNullableDatetime()
+        err := writer.WriteTimeValue("required_non_nullable_datetime", &v)
         if err != nil {
             return err
         }
     }
     {
-        _v := m.GetRequiredNonNullableDouble()
-        err := writer.WriteFloat64Value("required_non_nullable_double", &_v)
+        v := m.GetRequiredNonNullableDouble()
+        err := writer.WriteFloat64Value("required_non_nullable_double", &v)
         if err != nil {
             return err
         }
     }
     {
-        _v := m.GetRequiredNonNullableFloat()
-        err := writer.WriteFloat32Value("required_non_nullable_float", &_v)
+        v := m.GetRequiredNonNullableFloat()
+        err := writer.WriteFloat32Value("required_non_nullable_float", &v)
         if err != nil {
             return err
         }
     }
     {
-        _v := m.GetRequiredNonNullableInt()
-        err := writer.WriteInt32Value("required_non_nullable_int", &_v)
+        v := m.GetRequiredNonNullableInt()
+        err := writer.WriteInt32Value("required_non_nullable_int", &v)
         if err != nil {
             return err
         }
     }
     {
-        _v := m.GetRequiredNonNullableInt64()
-        err := writer.WriteInt64Value("required_non_nullable_int64", &_v)
+        v := m.GetRequiredNonNullableInt64()
+        err := writer.WriteInt64Value("required_non_nullable_int64", &v)
         if err != nil {
             return err
         }
     }
     {
-        _v := m.GetRequiredNonNullableString()
-        err := writer.WriteStringValue("required_non_nullable_string", &_v)
+        v := m.GetRequiredNonNullableString()
+        err := writer.WriteStringValue("required_non_nullable_string", &v)
         if err != nil {
             return err
         }
     }
     {
-        _v := m.GetRequiredNonNullableUuid()
-        err := writer.WriteUUIDValue("required_non_nullable_uuid", &_v)
+        v := m.GetRequiredNonNullableUuid()
+        err := writer.WriteUUIDValue("required_non_nullable_uuid", &v)
         if err != nil {
             return err
         }

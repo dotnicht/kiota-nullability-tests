@@ -5,12 +5,12 @@
     "test": "jest"
   },
   "dependencies": {
-    "@microsoft/kiota-abstractions": "^1.0.0",
-    "@microsoft/kiota-http-fetchlibrary": "^1.0.0",
-    "@microsoft/kiota-serialization-json": "^1.0.0",
-    "@microsoft/kiota-serialization-form": "^1.0.0",
-    "@microsoft/kiota-serialization-text": "^1.0.0",
-    "@microsoft/kiota-serialization-multipart": "^1.0.0"
+    "@microsoft/kiota-abstractions": "1.0.0-preview.102",
+    "@microsoft/kiota-http-fetchlibrary": "1.0.0-preview.102",
+    "@microsoft/kiota-serialization-json": "1.0.0-preview.102",
+    "@microsoft/kiota-serialization-form": "1.0.0-preview.102",
+    "@microsoft/kiota-serialization-text": "1.0.0-preview.102",
+    "@microsoft/kiota-serialization-multipart": "1.0.0-preview.102"
   },
   "devDependencies": {
     "@types/jest": "^29.0.0",

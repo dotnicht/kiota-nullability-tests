@@ -89,22 +89,22 @@ func (m *Post) GetUserId()(string) {
 // Serialize serializes information the current object
 func (m *Post) Serialize(writer i878a80d2330e89d26896388a3f487eef27b0a0e6c010c493bf80be1452208f91.SerializationWriter)(error) {
     {
-        _v := m.GetPostId()
-        err := writer.WriteInt32Value("post_id", &_v)
+        v := m.GetPostId()
+        err := writer.WriteInt32Value("post_id", &v)
         if err != nil {
             return err
         }
     }
     {
-        _v := m.GetTitle()
-        err := writer.WriteStringValue("title", &_v)
+        v := m.GetTitle()
+        err := writer.WriteStringValue("title", &v)
         if err != nil {
             return err
         }
     }
     {
-        _v := m.GetUserId()
-        err := writer.WriteStringValue("user_id", &_v)
+        v := m.GetUserId()
+        err := writer.WriteStringValue("user_id", &v)
         if err != nil {
             return err
         }

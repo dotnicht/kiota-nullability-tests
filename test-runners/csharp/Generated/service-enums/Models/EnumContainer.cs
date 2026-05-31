@@ -4,7 +4,6 @@ using Microsoft.Kiota.Abstractions.Extensions;
 using Microsoft.Kiota.Abstractions.Serialization;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System;
 namespace KiotaTest.Enums.Models
 {
@@ -67,7 +66,7 @@ namespace KiotaTest.Enums.Models
                 { "optional_nullable_priority", n => { OptionalNullablePriority = n.GetEnumValue<global::KiotaTest.Enums.Models.Priority>(); } },
                 { "required_non_nullable_status", n => { RequiredNonNullableStatus = n.GetEnumValue<global::KiotaTest.Enums.Models.Status>().GetValueOrDefault(); } },
                 { "required_nullable_status", n => { RequiredNullableStatus = n.GetEnumValue<global::KiotaTest.Enums.Models.Status>(); } },
-                { "statuses", n => { var raw = n.GetCollectionOfEnumValues<global::KiotaTest.Enums.Models.Status>()?.AsList(); if (raw is not null) Statuses = raw.Where(x => x.HasValue).Select(x => x!.Value).ToList(); } },
+                { "statuses", n => { Statuses = n.GetCollectionOfEnumValues<global::KiotaTest.Enums.Models.Status>()?.Select(x => x!.Value)?.AsList(); } },
             };
         }
         /// <summary>
@@ -77,11 +76,11 @@ namespace KiotaTest.Enums.Models
         public virtual void Serialize(ISerializationWriter writer)
         {
             if(ReferenceEquals(writer, null)) throw new ArgumentNullException(nameof(writer));
-            writer.WriteEnumValue<global::KiotaTest.Enums.Models.Code>("code", Code);
+            writer.WriteEnumValue<global::KiotaTest.Enums.Models.Code>("code", (global::KiotaTest.Enums.Models.Code?)Code);
             writer.WriteCollectionOfEnumValues<global::KiotaTest.Enums.Models.Status>("nullable_statuses", NullableStatuses);
             writer.WriteEnumValue<global::KiotaTest.Enums.Models.Priority>("optional_non_nullable_priority", OptionalNonNullablePriority);
             writer.WriteEnumValue<global::KiotaTest.Enums.Models.Priority>("optional_nullable_priority", OptionalNullablePriority);
-            writer.WriteEnumValue<global::KiotaTest.Enums.Models.Status>("required_non_nullable_status", RequiredNonNullableStatus);
+            writer.WriteEnumValue<global::KiotaTest.Enums.Models.Status>("required_non_nullable_status", (global::KiotaTest.Enums.Models.Status?)RequiredNonNullableStatus);
             writer.WriteEnumValue<global::KiotaTest.Enums.Models.Status>("required_nullable_status", RequiredNullableStatus);
             writer.WriteCollectionOfEnumValues<global::KiotaTest.Enums.Models.Status>("statuses", Statuses?.Select(x => (global::KiotaTest.Enums.Models.Status?)x));
             writer.WriteAdditionalData(AdditionalData);

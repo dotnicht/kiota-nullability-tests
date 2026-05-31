@@ -1,27 +1,23 @@
 Information: KiotaBuilder Cleaning output directory /Users/m.postoiko/kiota-nullability-fix/test-runners/go/generated/service-enums
 Debug: KiotaBuilder kiota version 1.31.1
-Debug: KiotaBuilder cache file /var/folders/jg/_t78spv13jl6__lyhzdvd0v80000gp/T/kiota/cache/generation/BA523B4D7308D2319AEBE3F65CEB4B074C9E470B8818CF2B80EEDED7E6DD041E/openapi.json not found, downloading from http://localhost:8080/openapi.json
-Information: KiotaBuilder skipping cache write for URI http://localhost:8080/openapi.json as it is a loopback address
-Information: KiotaBuilder loaded description from remote source
-Debug: KiotaBuilder step 1 - reading the stream - took 00:00:00.0226486
+Information: KiotaBuilder loaded description from local source
+Debug: KiotaBuilder step 1 - reading the stream - took 00:00:00.0045396
 Warning: KiotaBuilder OpenAPI warning: #/ - A servers entry (v3) or host + basePath + schemes properties (v2) was not present in the OpenAPI description. The root URL will need to be set manually with the request adapter.
-Debug: KiotaBuilder step 2 - parsing the document - took 00:00:00.0348913
-Debug: KiotaBuilder step 3 - updating generation configuration from kiota extension - took 00:00:00.0000579
-Debug: KiotaBuilder step 4 - filtering API paths with patterns - took 00:00:00.0011195
+Debug: KiotaBuilder step 2 - parsing the document - took 00:00:00.0381397
+Debug: KiotaBuilder step 3 - updating generation configuration from kiota extension - took 00:00:00.0000767
+Debug: KiotaBuilder step 4 - filtering API paths with patterns - took 00:00:00.0010608
 Warning: KiotaBuilder No server url found in the OpenAPI document. The base url will need to be set when using the client.
-Debug: KiotaBuilder step 5 - checking whether the output should be updated - took 00:00:00.0096123
-Debug: KiotaBuilder step 6 - create uri space - took 00:00:00.0014894
-Debug: KiotaBuilder InitializeInheritanceIndex 00:00:00.0016067
+Debug: KiotaBuilder step 5 - checking whether the output should be updated - took 00:00:00.0104283
+Debug: KiotaBuilder step 6 - create uri space - took 00:00:00.0014913
+Debug: KiotaBuilder InitializeInheritanceIndex 00:00:00.0015903
 Debug: KiotaBuilder CreateRequestBuilderClass 00:00:00
-Debug: KiotaBuilder MapTypeDefinitions 00:00:00.0020930
+Debug: KiotaBuilder MapTypeDefinitions 00:00:00.0025404
 Debug: KiotaBuilder TrimInheritedModels 00:00:00
 Debug: KiotaBuilder CleanUpInternalState 00:00:00
-Debug: KiotaBuilder step 7 - create source model - took 00:00:00.0328017
+Debug: KiotaBuilder step 7 - create source model - took 00:00:00.0362202
 Debug: KiotaBuilder 18ms: Language refinement applied
-Debug: KiotaBuilder step 8 - refine by language - took 00:00:00.0198852
-Debug: KiotaBuilder step 9 - writing files - took 00:00:00.0207170
-Debug: KiotaBuilder cache file /var/folders/jg/_t78spv13jl6__lyhzdvd0v80000gp/T/kiota/cache/generation/BA523B4D7308D2319AEBE3F65CEB4B074C9E470B8818CF2B80EEDED7E6DD041E/openapi.json not found, downloading from http://localhost:8080/openapi.json
-Information: KiotaBuilder skipping cache write for URI http://localhost:8080/openapi.json as it is a loopback address
-Information: KiotaBuilder loaded description from remote source
-Debug: KiotaBuilder step 10 - writing lock file - took 00:00:00.0070966
+Debug: KiotaBuilder step 8 - refine by language - took 00:00:00.0202374
+Debug: KiotaBuilder step 9 - writing files - took 00:00:00.0230143
+Information: KiotaBuilder loaded description from local source
+Debug: KiotaBuilder step 10 - writing lock file - took 00:00:00.0107375
 Debug: KiotaBuilder Api manifest path: /Users/m.postoiko/kiota-nullability-fix/kiota/apimanifest.json
