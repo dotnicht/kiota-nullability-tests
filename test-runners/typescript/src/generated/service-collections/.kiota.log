@@ -1,0 +1,23 @@
+Information: KiotaBuilder Cleaning output directory /Users/m.postoiko/kiota-nullability-fix/test-runners/typescript/src/generated/service-collections
+Debug: KiotaBuilder kiota version 1.31.1
+Information: KiotaBuilder loaded description from local source
+Debug: KiotaBuilder step 1 - reading the stream - took 00:00:00.0043522
+Warning: KiotaBuilder OpenAPI warning: #/ - A servers entry (v3) or host + basePath + schemes properties (v2) was not present in the OpenAPI description. The root URL will need to be set manually with the request adapter.
+Debug: KiotaBuilder step 2 - parsing the document - took 00:00:00.0393030
+Debug: KiotaBuilder step 3 - updating generation configuration from kiota extension - took 00:00:00.0000699
+Debug: KiotaBuilder step 4 - filtering API paths with patterns - took 00:00:00.0011158
+Warning: KiotaBuilder No server url found in the OpenAPI document. The base url will need to be set when using the client.
+Debug: KiotaBuilder step 5 - checking whether the output should be updated - took 00:00:00.0098807
+Debug: KiotaBuilder step 6 - create uri space - took 00:00:00.0015464
+Debug: KiotaBuilder InitializeInheritanceIndex 00:00:00.0018304
+Debug: KiotaBuilder CreateRequestBuilderClass 00:00:00
+Debug: KiotaBuilder MapTypeDefinitions 00:00:00.0024596
+Debug: KiotaBuilder TrimInheritedModels 00:00:00
+Debug: KiotaBuilder CleanUpInternalState 00:00:00
+Debug: KiotaBuilder step 7 - create source model - took 00:00:00.0350432
+Debug: KiotaBuilder 25ms: Language refinement applied
+Debug: KiotaBuilder step 8 - refine by language - took 00:00:00.0267519
+Debug: KiotaBuilder step 9 - writing files - took 00:00:00.0183993
+Information: KiotaBuilder loaded description from local source
+Debug: KiotaBuilder step 10 - writing lock file - took 00:00:00.0097796
+Debug: KiotaBuilder Api manifest path: /Users/m.postoiko/kiota-nullability-fix/apimanifest.json
